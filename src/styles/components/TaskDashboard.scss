@@ -1,0 +1,125 @@
+.task-dashboard-layout {
+    padding: 30px 50px;
+    height: 100vh;
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 760px) {
+        padding: 30px 10px;
+    }
+
+    .data-section{
+        display: flex;
+        width: 100%;
+        min-height: 70%;
+        margin-top: 20px;
+        gap: 20px;
+
+        .task-section{
+            width: 100%;
+            border: solid 1px rgb(234, 234, 234);
+            border-radius: 7px;
+            padding: 10px;
+
+            .actionBar{
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+
+                .SegmentedTab{
+                    overflow: hidden;
+                }
+
+                .rightActionbar{
+                    display: flex;
+                    gap: 4px;
+                }
+
+                @media (max-width: 760px) {
+                    flex-direction: column;
+                    align-items: stretch;
+                    gap: 8px;
+                
+                    .rightActionbar {
+                      justify-content: center;
+                      width: 100%;
+                    }
+                }
+            }
+
+            .taskCard{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 7px;
+                border-radius: 7px;
+                padding: 5px 10px;
+                border: solid 1px rgb(234, 234, 234);
+
+                .taskCardCTA{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 7px;
+                }
+                .taskContainer{
+                    display: flex;
+                    justify-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    margin: 0;
+
+                    .taskActionIcon{
+                        padding: 0px;
+                        margin: 0px;
+                        color: rgb(114, 113, 113);
+                        &:hover{
+                            color: rgb(0, 123, 255);
+                        }
+                    }
+                }
+                .dueDate{
+                    color: rgb(114, 113, 113);
+                    font-size: 16px;
+                }
+                
+                p{
+                    font-size: 16px;
+                    margin: 0px;
+                }
+            }
+        }
+        .taskCard.expanded {
+            max-height: 300px;
+        }
+          
+        .task-description {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        }
+
+        .graph-section{
+            width: 40%;
+            border: solid 1px rgb(234, 234, 234);
+            border-radius: 7px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.inputs{
+    padding: 8px 10px;
+    border: solid 1px rgb(234, 234, 234);
+    border-radius: 7px;
+}
+
+.buttons{
+    width: 20%;
+}
